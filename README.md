@@ -1,3 +1,49 @@
+# Desafio - Feliphe Pozzer
+
+## Requirements
+* Docker version 19.03.13
+* docker-compose version 1.25.4
+
+## Added Gems On Project
+* Materialize
+* slim
+* JQuery
+* responders
+* pry
+* RSpec
+* Factory Bot
+* Shoulda Callback Matchers
+* Shoulda Matchers
+* simplecov
+
+## Run Project
+On project folder run this command to build application:
+
+### Setup
+```
+$ docker-compose run --rm web bundle install
+$ docker-compose up -d
+$ docker-compose exec web bundle exec rails db:setup
+```
+
+### Run tests
+```
+$	docker-compose exec web bundle exec rspec
+```
+
+### Stop and close
+```
+$	docker-compose stop
+$ docker-compose down
+```
+
+
+## Pending Changes
+1. Auth with Devise
+2. OAuth with github
+
+---
+
 # Desafio programação - para vaga Back-end
 
 Por favor leiam este documento do começo ao fim, com muita atenção.

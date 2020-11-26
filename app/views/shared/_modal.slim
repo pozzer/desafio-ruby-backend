@@ -1,0 +1,11 @@
+/! Modal Structure
+#modal1.modal.bottom-sheet
+  .modal-content
+    h4 Importar CNAB
+    = form_for "", url: import_path, html: { multipart: true } do |f|
+      .col.s10
+        = f.file_field :file, class: "", accept: Mime[:text], required:true
+      .col.s2.input-field
+        = f.submit "Importar", class: "btn full-width"
+  .modal-footer
+    a.modal-close.waves-effect.waves-green.btn-flat href="#!"  Agree

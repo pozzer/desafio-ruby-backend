@@ -1,0 +1,25 @@
+h2 #{@store.name} - #{@store.owner_name}
+table.striped
+  thead
+    tr
+      th Tipo da transação
+      th Valor da movimentação
+      th Data da ocorrência
+      th CPF do beneficiário
+      th Cartão utilizado
+  tbody
+    - @transactions.each do |transactions|
+      tr
+        td = transactions.kind
+        td R$ #{transactions.amount}
+        td = l transactions.occurrence_at
+        td = transactions.document_number
+        td = transactions.card_number
+    tr 
+      td colspan="4" 
+      p
+        | Entradas: R$ #{@store.inputs_sums}
+      p
+        | Saidas: R$-#{@store.outputs_sums}
+      p
+        | Total: R$ #{@store.total_sums}

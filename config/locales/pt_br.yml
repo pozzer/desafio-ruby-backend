@@ -1,0 +1,47 @@
+pt-BR:
+  helpers:
+    "true": Sim
+    "false": Não
+    actions: "Ações"
+    controller_actions:
+      index: Listagem
+      new: Novo
+      edit: Editar
+      create: Criou
+      update: Atualizou
+      destroy: Excluiu
+    links:
+      back: "Voltar"
+      cancel: "Cancelar"
+      confirm: "Você tem certeza?"
+      destroy: "Excluir"
+      new: "Novo"
+      edit: "Editar"
+      eraser: "Apagar"
+    titles:
+      edit: "Editar %{model}"
+      save: "Salvar %{model}"
+      save_and_keep: "Salvar e Ficar"
+      save_and_new: "Salvar e Criar"
+      new: "Novo %{model}"
+      delete: "Excluir %{model}"
+      search: "Pesquisar"
+    page_entries_info:
+      nobody: "Você não tem nenhum(a) %{model}"
+      one_page:
+        display_entries:
+          zero: "Nenhum %{entry_name} encontrado"
+          one: "Mostrando <b>1</b> %{entry_name}"
+          other: "Mostrando <b>todos %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Mostrando %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> de <b>%{total}</b>"
+
+  activerecord:
+    enums:
+      
+    models:
+   
+    attributes:
+      
+  views:
+ 

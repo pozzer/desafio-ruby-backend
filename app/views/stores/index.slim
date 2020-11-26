@@ -1,0 +1,21 @@
+table.striped
+  thead
+    tr
+      th Name
+      th Owner Name
+      th.right Actions
+  tbody
+    - @stores.each do |store|
+      tr
+        td= store.name
+        td= store.owner_name
+        td.right
+          = link_to "<i class='material-icons left'>attach_money</i>Transactions ".html_safe, store_transactions_path(store), class:"waves-effect waves-light btn"
+.tap-target data-target="menu" 
+  .tap-target-content
+    h5 Importar
+    p Importe seus CNAB aqui!
+.fixed-action-btn.direction-top.active style=("bottom: 45px; right: 24px;") 
+  a#menu.btn.btn-floating.btn-large onclick="$('#modal1').modal('open');" 
+    i.material-icons menu
+= render "shared/modal"
